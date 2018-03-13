@@ -1,7 +1,15 @@
 --Arc Furnace
 if mods["angelssmelting"] and settings.startup["ArcFurnace_Status"].value then
+	if mods["bobplates"] and mods["bobelectronics"] then
+		require("prototypes.arc-furnace-recipe")
+	elseif mods["bobplates"] then
+		require("prototypes.arc-furnace-recipe_nobobelec")
+	elseif mods["bobelectronics"] then
+		require("prototypes.arc-furnace-recipe_nobobplates")
+	else
+		require("prototypes.arc-furnace-recipe_nobob")
+	end
 	require("prototypes.arc-furnace")
-	require("prototypes.arc-furnace-recipe")
 	require("prototypes.arc-furnace-technology")
 end
 --OP Beacon

@@ -13,6 +13,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "a[arc-furnace_1]",
@@ -23,16 +24,17 @@ data:extend({
 		type = "assembling-machine",
 		name = "arc-furnace_1",
 		icons = {
-		{
-			icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
+			{
+				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
+			},
+			{
+				icon = "__angelspetrochem__/graphics/icons/num_1.png",
+				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
+				scale = 0.32,
+				shift = {-12, -12},
+			}
 		},
-		{
-			icon = "__angelspetrochem__/graphics/icons/num_1.png",
-			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
-			scale = 0.32,
-			shift = {-12, -12},
-		}
-		},
+		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "arc-furnace_1"},
 		fast_replaceable_group = "blast-furnace",
@@ -106,6 +108,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "b[arc-furnace_2]",
@@ -116,16 +119,17 @@ data:extend({
 		type = "assembling-machine",
 		name = "arc-furnace_2",
 		icons = {
-		{
-			icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
+			{
+				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
+			},
+			{
+				icon = "__angelspetrochem__/graphics/icons/num_2.png",
+				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
+				scale = 0.32,
+				shift = {-12, -12},
+			}
 		},
-		{
-			icon = "__angelspetrochem__/graphics/icons/num_2.png",
-			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
-			scale = 0.32,
-			shift = {-12, -12},
-		}
-		},
+		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "arc-furnace_2"},
 		fast_replaceable_group = "blast-furnace",
@@ -199,6 +203,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "c[arc-furnace_3]",
@@ -219,6 +224,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "arc-furnace_3"},
 		fast_replaceable_group = "blast-furnace",
@@ -292,6 +298,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "d[arc-furnace_4]",
@@ -312,6 +319,7 @@ data:extend({
 				shift = {-12, -12},
 			}
 		},
+		icon_size = 32,
 		flags = {"placeable-neutral","player-creation"},
 		minable = {mining_time = 1, result = "arc-furnace_4"},
 		fast_replaceable_group = "blast-furnace",

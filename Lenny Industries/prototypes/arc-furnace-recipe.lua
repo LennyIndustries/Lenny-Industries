@@ -8,7 +8,7 @@ data:extend({
 		{
 			{"blast-furnace", 1},
 			{"iron-plate", 5},
-			{"basic-circuit-board", 1},
+			{"basic-circuit-board", 2},
 			{"stone-brick", 10},
 		},
 			result="arc-furnace_1",

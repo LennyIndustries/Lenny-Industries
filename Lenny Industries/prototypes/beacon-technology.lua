@@ -3,6 +3,7 @@ data:extend({
 		type = "technology",
 		name = "tech-op_beacon_1",
 		icon = "__base__/graphics/technology/effect-transmission.png",
+		icon_size = 128,
 		effects =
 		{
 			{
@@ -34,6 +35,7 @@ data:extend({
 		type = "technology",
 		name = "tech-op_beacon_2",
 		icon = "__base__/graphics/technology/effect-transmission.png",
+		icon_size = 128,
 		effects =
 		{
 			{
