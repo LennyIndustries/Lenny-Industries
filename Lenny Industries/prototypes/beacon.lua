@@ -18,7 +18,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"goes-to-quickbar"},
 		subgroup = "module",
-		order = "a[beacon]-3",
+		order = "a[beacon]-4",
 		place_result = "op_beacon_2",
 		stack_size = 10
 	},

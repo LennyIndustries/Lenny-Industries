@@ -11,7 +11,7 @@ data:extend({
 			{"basic-circuit-board", 2},
 			{"stone-brick", 10},
 		},
-			result="arc-furnace_1",
+		result="arc-furnace_1",
 	},
 
 	{

@@ -2,7 +2,8 @@ data:extend({
 	{
 		type = "item",
 		name = "arc-furnace_1",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -23,7 +24,8 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "arc-furnace_1",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -97,7 +99,8 @@ data:extend({
 	{
 		type = "item",
 		name = "arc-furnace_2",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -118,7 +121,8 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "arc-furnace_2",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -192,7 +196,8 @@ data:extend({
 	{
 		type = "item",
 		name = "arc-furnace_3",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -213,7 +218,8 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "arc-furnace_3",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -287,7 +293,8 @@ data:extend({
 	{
 		type = "item",
 		name = "arc-furnace_4",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},
@@ -308,7 +315,8 @@ data:extend({
 	{
 		type = "assembling-machine",
 		name = "arc-furnace_4",
-		icons = {
+		icons =
+		{
 			{
 				icon = "__angelssmelting__/graphics/icons/blast-furnace.png",
 			},

@@ -11,7 +11,7 @@ data:extend({
 			{"electronic-circuit", 2},
 			{"stone-brick", 10},
 		},
-			result="arc-furnace_1",
+		result="arc-furnace_1",
 	},
 
 	{
