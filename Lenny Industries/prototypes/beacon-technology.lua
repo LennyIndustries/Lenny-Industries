@@ -59,6 +59,6 @@ data:extend({
 			},
 			time = 120
 		},
-		order = "i-i-2"
+		order = "i-i-3"
 	},
 })

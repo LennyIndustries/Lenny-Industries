@@ -25,7 +25,7 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "OPBeacon_Status",
+		name = "LRobot_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
@@ -33,11 +33,27 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "VehicleGrid_Status",
+		name = "CRobot_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
 		order = "ae",
+	},
+	{
+		type = "bool-setting",
+		name = "OPBeacon_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "af",
+	},
+	{
+		type = "bool-setting",
+		name = "VehicleGrid_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "ag",
 	},
 	{
 		type = "int-setting",
@@ -47,7 +63,7 @@ data:extend({
 		minimum_value = 1,
 		maximum_value = 50,
 		per_user = false,
-		order = "af",
+		order = "ah",
 	},
 	{
 		type = "int-setting",
@@ -57,6 +73,14 @@ data:extend({
 		minimum_value = 1,
 		maximum_value = 50,
 		per_user = false,
-		order = "ag",
+		order = "ai",
+	},
+	{
+		type = "bool-setting",
+		name = "BobPower_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "aj",
 	},
 })
