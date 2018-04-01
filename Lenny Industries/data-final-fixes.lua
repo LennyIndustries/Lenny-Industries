@@ -1,60 +1,60 @@
 --Arc Furnace
 if mods["angelssmelting"] and settings.startup["ArcFurnace_Status"].value then
 	if mods["bobplates"] and mods["bobelectronics"] then
-		require("prototypes.arc-furnace-recipe")
+		require("prototypes.recipe.arc-furnace")
 	elseif mods["bobplates"] then
-		require("prototypes.arc-furnace-recipe_nobobelec")
+		require("prototypes.recipe.arc-furnace_nobobelec")
 	elseif mods["bobelectronics"] then
-		require("prototypes.arc-furnace-recipe_nobobplates")
+		require("prototypes.recipe.arc-furnace_nobobplates")
 	else
-		require("prototypes.arc-furnace-recipe_nobob")
+		require("prototypes.recipe.arc-furnace_nobob")
 	end
-	require("prototypes.arc-furnace")
-	require("prototypes.arc-furnace-technology")
+	require("prototypes.entity.arc-furnace")
+	require("prototypes.technology.arc-furnace")
 end
 --OP Beacon
 if settings.startup["OPBeacon_Status"].value then
-	require("prototypes.beacon")
-	require("prototypes.beacon-recipe")
-	require("prototypes.beacon-technology")
+	require("prototypes.entity.beacon")
+	require("prototypes.recipe.beacon")
+	require("prototypes.technology.beacon")
 end
 --Quality Of Life
 if settings.startup["Pipe_Status"].value then
-	require("prototypes.overwrite_pipes")
+	require("prototypes.overwrites.overwrite_pipes")
 end
 --Vehicle Equipment Grid
 if settings.startup["VehicleGrid_Status"].value then
 	if mods["bobvehicleequipment"] and mods["angelscomponents"] then
-		require ("prototypes.equipment-grid_bob-angel")
+		require ("prototypes.equipment-grid.bob-angel")
 	elseif mods["bobvehicleequipment"] then
-		require ("prototypes.equipment-grid_bob")
+		require ("prototypes.equipment-grid.bob")
 	elseif mods["angelscomponents"] then
-		require ("prototypes.equipment-grid_angel")
+		require ("prototypes.equipment-grid.angel")
 	else
-		require ("prototypes.equipment-grid_vanilla")
+		require ("prototypes.equipment-grid.vanilla")
 	end
-	require("prototypes.overwrite_grid")
+	require("prototypes.overwrites.overwrite_grid")
 end
 --Wood In Electronics
 if mods["bobelectronics"] and mods["bobassembly"] and settings.startup["Electronics_Status"].value then
 	if mods["aai-industry"] then
-		require("prototypes.overwrite_bobelectronics-aai")
+		require("prototypes.overwrites.overwrite_bobelectronics-aai")
 	else
-		require("prototypes.overwrite_bobelectronics")
+		require("prototypes.overwrites.overwrite_bobelectronics")
 	end
 end
 --Unmineable Robots
 if settings.startup["LRobot_Status"].value then
-	for name, entity in pairs(data.raw["logistic-robot"]) do
-	  entity.minable = nil
-	end
+	require("prototypes.overwrites.overwrite_logistic-robot")
 end
 if settings.startup["CRobot_Status"].value then
-	for name, entity in pairs(data.raw["construction-robot"]) do
-	  entity.minable = nil
-	end
+	require("prototypes.overwrites.overwrite_construction-robot")
 end
 --Rebalance Bob's Steam
 if mods["bobpower"] and settings.startup["BobPower_Status"].value then
-	require("prototypes.overwrite_bobpower")
+	require("prototypes.overwrites.overwrite_bobpower")
+end
+--Better Inserters Research
+if settings.startup["BetterInserters_Status"].value then
+	require("prototypes.technology.betterinsertersresearch")
 end

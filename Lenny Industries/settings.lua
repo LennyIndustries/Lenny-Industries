@@ -83,4 +83,12 @@ data:extend({
 		per_user = false,
 		order = "aj",
 	},
+	{
+		type = "bool-setting",
+		name = "BetterInserters_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "ak",
+	},
 })
