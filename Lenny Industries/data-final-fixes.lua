@@ -58,3 +58,11 @@ end
 if settings.startup["BetterInserters_Status"].value then
 	require("prototypes.technology.betterinsertersresearch")
 end
+--Super Tank
+if settings.startup["SuperTank_Status"].value then
+	supertank_ammo_factor = 15
+	require("prototypes.entity.super_tank")
+	require("prototypes.item.super_tank")
+	require("prototypes.recipe.super_tank")
+	require("prototypes.technology.super_tank")
+end
