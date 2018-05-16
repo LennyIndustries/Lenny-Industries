@@ -91,4 +91,12 @@ data:extend({
 		per_user = false,
 		order = "ak",
 	},
+	{
+		type = "bool-setting",
+		name = "SuperTank_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "al",
+	},
 })
