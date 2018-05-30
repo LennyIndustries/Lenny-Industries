@@ -39,6 +39,7 @@ end
 if mods["bobelectronics"] and mods["bobassembly"] and settings.startup["Electronics_Status"].value then
 	if mods["aai-industry"] then
 		require("prototypes.overwrites.overwrite_bobelectronics-aai")
+		require("prototypes.overwrites.overwrite_bobelectronics")
 	else
 		require("prototypes.overwrites.overwrite_bobelectronics")
 	end
