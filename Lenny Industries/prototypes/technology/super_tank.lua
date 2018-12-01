@@ -1,7 +1,7 @@
 data:extend({
 	{
 		type = "technology",
-		name = "supertanks",
+		name = "tech-supertank",
 		icon = "__Lenny_Industries__/graphics/supertanks.png",
 		icon_size = 128,
 		effects =
@@ -22,14 +22,15 @@ data:extend({
 		prerequisites = {"tanks"},
 		unit =
 		{
-			count = 60, -- from 20
+			count = 60,
 			ingredients =
 			{
 				{"science-pack-1", 1},
 				{"science-pack-2", 1},
-				{"science-pack-3", 1}
+				{"science-pack-3", 1},
+				{"military-science-pack", 1}
 			},
-			time = 60 -- from 20
+			time = 60
 		},
 		order = "e-c-u",
 	},

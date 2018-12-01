@@ -6,7 +6,7 @@ data:extend({
 		icon_size = 32,
 		flags = {"pushable", "placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "supertank"},
-		max_health = 25000, -- from 1000
+		max_health = 25000 * settings.startup["SuperTank_Life"].value,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		energy_per_hit_point = 0.5,
@@ -15,47 +15,47 @@ data:extend({
 			{
 				type = "fire",
 				decrease = 15,
-				percent = 75 -- from 50
+				percent = 75
 			},
 			{
 				type = "physical",
 				decrease = 15,
-				percent = 50   -- from 30
+				percent = 50
 			},
 			{
 				type = "impact",
 				decrease = 50,
-				percent = 75 -- from 60
+				percent = 75
 			},
 			{
 				type = "explosion",
 				decrease = 15,
-				percent = 50 -- from 30
+				percent = 50
 			},
 			{
 				type = "acid",
 				decrease = 10,
-				percent =  50  -- from 20
+				percent =  50
 			}
 		},
 		collision_box = {{-0.9, -1.3}, {0.9, 1.3}},
 		selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
-		effectivity = 0.8, -- from 0.6
-		braking_power = "1200kW", -- from 400
+		effectivity = 0.8,
+		braking_power = "1200kW",
 		breaking_speed = 1,
-		consumption = "1.5MW", -- from 600
-		terrain_friction_modifier = 0.2, -- from 0.2
-		friction = 0.002, -- from 0.002
-		turret_rotation_speed = 0.5, -- from 0.35
-		turret_return_timeout = 500, -- from 300
-		rotation_speed = 0.0065, -- from 0.01
+		consumption = "1.5MW",
+		terrain_friction_modifier = 0.2,
+		friction = 0.002,
+		turret_rotation_speed = 0.5,
+		turret_return_timeout = 500,
+		rotation_speed = 0.0065,
 		tank_driving = true,
-		weight = 20000, -- from 20000
-		inventory_size = 40, -- from 80
+		weight = 20000,
+		inventory_size = 40,
 		stop_trigger_speed = 0.2,
 		burner =
 		{
-			effectivity = 1, -- from 0.75
+			effectivity = 1,
 			fuel_inventory_size = 3,
 			smoke =
 			{
@@ -294,11 +294,11 @@ data:extend({
 		{
 			type = "projectile",
 			ammo_category = "cannon-shell",
-			cooldown = 90 *  3 / (2 + supertank_ammo_factor), -- from 90
+			cooldown = 90 / settings.startup["SuperTank_Ammo"].value,
 			movement_slow_down_factor = 0,
 			projectile_creation_distance = 1.6,
 			projectile_center = {-0.15625, -0.07812},
-			range = 25+(supertank_ammo_factor-1)*2, -- from 25
+			range = 35,
 			sound =
 			{
 				{
@@ -337,7 +337,7 @@ data:extend({
 			},
 			projectile_center = {-0.15625, -0.07812},
 			projectile_creation_distance = 1,
-			range = 15+(supertank_ammo_factor-1)*2,
+			range = 35
 			sound = make_heavy_gunshot_sounds(),
 		},
 		stack_size = 1

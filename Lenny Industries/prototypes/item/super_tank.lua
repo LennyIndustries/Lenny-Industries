@@ -29,9 +29,10 @@ data:extend({
 					type = "projectile",
 					projectile = "super-explosive-cannon-projectile",
 					starting_speed = 1,
-					direction_deviation = 0.1,
-					range_deviation = 0.1,
-					max_range = 30 + 10 * (supertank_ammo_factor-1),
+					direction_deviation = 0.001,
+					range_deviation = 0.001,
+					max_range = 40,
+					min_range = 7.5,
 					source_effects =
 					{
 						type = "create-explosion",
@@ -40,9 +41,10 @@ data:extend({
 				}
 			},
 		},
+		magazine_size = 5 * settings.startup["SuperTank_Ammo"].value,
 		subgroup = "ammo",
 		order = "d[cannon-shell]-c",
-		stack_size = 100 + (supertank_ammo_factor-1)*10
+		stack_size = 100 * settings.startup["SuperTank_Ammo"].value
 	},
 
 	{
@@ -52,7 +54,7 @@ data:extend({
 		collision_box = {{-0.05, -1.1}, {0.05, 1.1}},
 		acceleration = 0,
 		direction_only = true,
-		piercing_damage = 30 + 150 * (supertank_ammo_factor-1),
+		piercing_damage = 2000 * settings.startup["SuperTank_Ammo"].value,
 		action =
 		{
 			type = "direct",
@@ -63,7 +65,7 @@ data:extend({
 				{
 					{
 						type = "damage",
-						damage = { amount = 30 + (supertank_ammo_factor-1) * 150, type = "physical"}
+						damage = { amount = 2500 * settings.startup["SuperTank_Ammo"].value, type = "physical"}
 					}
 				}
 			}
@@ -86,8 +88,8 @@ data:extend({
 						action =
 						{
 							type = "area",
-							perimeter = 4 + 1.5 * (supertank_ammo_factor-1),
-							radius = 4 + 1.5 * (supertank_ammo_factor-1),
+							perimeter = 25 * settings.startup["SuperTank_Ammo"].value,
+							radius = 25 * settings.startup["SuperTank_Ammo"].value,
 							action_delivery =
 							{
 								type = "instant",
@@ -95,7 +97,7 @@ data:extend({
 								{
 									{
 									type = "damage",
-									damage = {amount = 80 + 250 * (supertank_ammo_factor-1), type = "explosion"}
+									damage = {amount = 5000 * settings.startup["SuperTank_Ammo"].value, type = "explosion"}
 									},
 									{
 										type = "create-entity",
@@ -146,15 +148,15 @@ data:extend({
 						},
 						{
 							type = "damage",
-							damage = { amount = 5 + (supertank_ammo_factor-1) * 10 , type = "physical"}
+							damage = { amount = 150 * settings.startup["SuperTank_Ammo"].value , type = "physical"}
 						}
 					}
 				}
 			}
 		},
-		magazine_size = 10 + (supertank_ammo_factor-1) * 10,
+		magazine_size = 25 * settings.startup["SuperTank_Ammo"].value,
 		subgroup = "ammo",
 		order = "a[basic-clips]-c",
-		stack_size = 100 + (supertank_ammo_factor-1)*10
+		stack_size = 100
 	},
 })

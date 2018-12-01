@@ -3,7 +3,7 @@ data:extend({
 		type = "recipe",
 		name = "supertank",
 		enabled = false,
-		energy_required = 12, -- craft time
+		energy_required = 12,
 		ingredients =
 		{
 			{"engine-unit", 16},
@@ -18,7 +18,7 @@ data:extend({
 		type = "recipe",
 		name = "super-explosive-cannon-shell",
 		enabled = false,
-		energy_required = 10, -- craft time
+		energy_required = 10,
 		ingredients =
 		{
 			{"explosive-cannon-shell", 15},
@@ -31,7 +31,7 @@ data:extend({
 		type = "recipe",
 		name = "super-piercing-bullet-magazine",
 		enabled = false,
-		energy_required = 4, -- craft time
+		energy_required = 4,
 		ingredients =
 		{
 			{"copper-plate", 7},

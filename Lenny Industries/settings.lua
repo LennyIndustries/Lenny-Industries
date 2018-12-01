@@ -43,7 +43,7 @@ data:extend({
 		type = "bool-setting",
 		name = "OPBeacon_Status",
 		setting_type = "startup",
-		default_value = true,
+		default_value = false,
 		per_user = false,
 		order = "af",
 	},
@@ -99,4 +99,39 @@ data:extend({
 		per_user = false,
 		order = "al",
 	},
+	{
+		type = "int-setting",
+		name = "SuperTank_Life",
+		setting_type = "startup",
+		default_value = 1,
+		minimum_value = 1,
+		per_user = false,
+		order = "am",
+	},
+--[[	{
+		type = "int-setting",
+		name = "SuperTank_Mecha",
+		setting_type = "startup",
+		default_value = 1,
+		minimum_value = 1,
+		per_user = false,
+		order = "an",
+	},]]--
+	{
+		type = "int-setting",
+		name = "SuperTank_Ammo",
+		setting_type = "startup",
+		default_value = 1,
+		minimum_value = 1,
+		per_user = false,
+		order = "ao",
+	},
+	--[[{
+		type = "bool-setting",
+		name = "SuperTank_Explosion_Immune",
+		setting_type = "startup",
+		default_value = false,
+		per_user = false,
+		order = "ap",
+	},]]--
 })
