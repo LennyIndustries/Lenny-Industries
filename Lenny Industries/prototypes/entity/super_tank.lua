@@ -337,8 +337,8 @@ data:extend({
 			},
 			projectile_center = {-0.15625, -0.07812},
 			projectile_creation_distance = 1,
-			range = 35
-			sound = make_heavy_gunshot_sounds(),
+			range = 35,
+			sound = make_heavy_gunshot_sounds()
 		},
 		stack_size = 1
 	},
