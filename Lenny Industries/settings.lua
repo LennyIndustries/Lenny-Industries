@@ -9,7 +9,7 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "Electronics_Status",
+		name = "ArcFurnaceGFX_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
@@ -17,7 +17,7 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "Pipe_Status",
+		name = "Electronics_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
@@ -25,7 +25,7 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "LRobot_Status",
+		name = "Pipe_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
@@ -33,7 +33,7 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "CRobot_Status",
+		name = "LRobot_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
@@ -41,11 +41,19 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
+		name = "CRobot_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+		order = "af",
+	},
+	{
+		type = "bool-setting",
 		name = "OPBeacon_Status",
 		setting_type = "startup",
 		default_value = false,
 		per_user = false,
-		order = "af",
+		order = "ag",
 	},
 	{
 		type = "bool-setting",
@@ -53,7 +61,7 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
-		order = "ag",
+		order = "ah",
 	},
 	{
 		type = "int-setting",
@@ -63,7 +71,7 @@ data:extend({
 		minimum_value = 1,
 		maximum_value = 50,
 		per_user = false,
-		order = "ah",
+		order = "ai",
 	},
 	{
 		type = "int-setting",
@@ -73,23 +81,25 @@ data:extend({
 		minimum_value = 1,
 		maximum_value = 50,
 		per_user = false,
-		order = "ai",
+		order = "aj",
 	},
+--[[DEPRECATED
 	{
 		type = "bool-setting",
 		name = "BobPower_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
-		order = "aj",
+		order = "ak",
 	},
+]]--
 	{
 		type = "bool-setting",
 		name = "BetterInserters_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
-		order = "ak",
+		order = "al",
 	},
 	{
 		type = "bool-setting",
@@ -97,7 +107,7 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
-		order = "al",
+		order = "am",
 	},
 	{
 		type = "int-setting",
@@ -106,17 +116,19 @@ data:extend({
 		default_value = 1,
 		minimum_value = 1,
 		per_user = false,
-		order = "am",
+		order = "an",
 	},
---[[	{
+--[[
+	{
 		type = "int-setting",
 		name = "SuperTank_Mecha",
 		setting_type = "startup",
 		default_value = 1,
 		minimum_value = 1,
 		per_user = false,
-		order = "an",
-	},]]--
+		order = "ao",
+	},
+]]--
 	{
 		type = "int-setting",
 		name = "SuperTank_Ammo",
@@ -124,14 +136,16 @@ data:extend({
 		default_value = 1,
 		minimum_value = 1,
 		per_user = false,
-		order = "ao",
+		order = "ap",
 	},
-	--[[{
+--[[
+	{
 		type = "bool-setting",
 		name = "SuperTank_Explosion_Immune",
 		setting_type = "startup",
 		default_value = false,
 		per_user = false,
-		order = "ap",
-	},]]--
+		order = "aq",
+	},
+]]--
 })
