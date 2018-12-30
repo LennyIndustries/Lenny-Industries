@@ -34,6 +34,11 @@ if settings.startup["CRobot_Status"].value then
 end
 
 --Rebalance Bob's Steam
+--[[DEPRECATED
 if mods["bobpower"] and settings.startup["BobPower_Status"].value then
 	require("prototypes.overwrites.overwrite_bobpower")
 end
+]]--
+
+--Data Dump (DEBUG)
+--log( serpent.block( data.raw, {comment = false, numformat = '%1.8g' } ) )

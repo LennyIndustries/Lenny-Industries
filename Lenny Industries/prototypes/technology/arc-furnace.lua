@@ -1,8 +1,16 @@
 data:extend({
 	{
 		type = "technology",
-		name = "tech-arc-furnace_1",
-		icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png",
+		name = "tech-arc-furnace-1",
+		icons =
+		{
+			{
+				icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png"
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/tech-lightning-bolt.png"
+			}
+		},
 		icon_size = 128,
 		upgrade = true,
 		prerequisites =
@@ -29,13 +37,21 @@ data:extend({
 
 	{
 		type = "technology",
-		name = "tech-arc-furnace_2",
-		icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png",
+		name = "tech-arc-furnace-2",
+		icons =
+		{
+			{
+				icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png"
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/tech-lightning-bolt.png"
+			}
+		},
 		icon_size = 128,
 		upgrade = true,
 		prerequisites =
 		{
-			"tech-arc-furnace_1",
+			"tech-arc-furnace-1",
 			"angels-metallurgy-2",
 		},
 		effects =
@@ -59,13 +75,21 @@ data:extend({
 
 	{
 		type = "technology",
-		name = "tech-arc-furnace_3",
-		icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png",
+		name = "tech-arc-furnace-3",
+		icons =
+		{
+			{
+				icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png"
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/tech-lightning-bolt.png"
+			}
+		},
 		icon_size = 128,
 		upgrade = true,
 		prerequisites =
 		{
-			"tech-arc-furnace_2",
+			"tech-arc-furnace-2",
 			"angels-metallurgy-3",
 		},
 		effects =
@@ -90,13 +114,21 @@ data:extend({
 
 	{
 		type = "technology",
-		name = "tech-arc-furnace_4",
-		icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png",
+		name = "tech-arc-furnace-4",
+		icons =
+		{
+			{
+				icon = "__angelssmelting__/graphics/technology/blast-furnace-tech.png"
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/tech-lightning-bolt.png"
+			}
+		},
 		icon_size = 128,
 		upgrade = true,
 		prerequisites =
 		{
-			"tech-arc-furnace_3",
+			"tech-arc-furnace-3",
 			"angels-metallurgy-4",
 		},
 		effects =

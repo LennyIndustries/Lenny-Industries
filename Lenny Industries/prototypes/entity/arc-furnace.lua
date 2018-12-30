@@ -12,6 +12,9 @@ data:extend({
 				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 				scale = 0.32,
 				shift = {-12, -12},
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/lightning-bolt.png"
 			}
 		},
 		icon_size = 32,
@@ -70,6 +73,34 @@ data:extend({
 			shift = {0, 0},
 			animation_speed = 0.75
 		},
+		working_visualisations =
+		{
+			{
+				animation =
+				{
+					filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+					line_length = 10,
+					width = 20,
+					height = 40,
+					frame_count = 60,
+					animation_speed = 0.75,
+					scale = 1,
+					shift = {-2.05, -2.3},
+					hr_version =
+					{
+						filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+						line_length = 10,
+						width = 40,
+						height = 81,
+						frame_count = 60,
+						animation_speed = 0.75,
+						scale = 1,
+						shift = {-2.05, -2.3},
+					},
+				},
+				light = {intensity = 0.8, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+			}
+		},
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
 		{
@@ -109,6 +140,9 @@ data:extend({
 				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 				scale = 0.32,
 				shift = {-12, -12},
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/lightning-bolt.png"
 			}
 		},
 		icon_size = 32,
@@ -167,6 +201,34 @@ data:extend({
 			shift = {0, 0},
 			animation_speed = 0.75
 		},
+		working_visualisations =
+		{
+			{
+				animation =
+				{
+					filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+					line_length = 10,
+					width = 20,
+					height = 40,
+					frame_count = 60,
+					animation_speed = 0.75,
+					scale = 1,
+					shift = {-2.05, -2.3},
+					hr_version =
+					{
+						filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+						line_length = 10,
+						width = 40,
+						height = 81,
+						frame_count = 60,
+						animation_speed = 0.75,
+						scale = 1,
+						shift = {-2.05, -2.3},
+					},
+				},
+				light = {intensity = 0.8, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+			}
+		},
 		vehicle_impact_sound =	{ filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
 		{
@@ -206,6 +268,9 @@ data:extend({
 				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 				scale = 0.32,
 				shift = {-12, -12},
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/lightning-bolt.png"
 			}
 		},
 		icon_size = 32,
@@ -264,6 +329,34 @@ data:extend({
 			shift = {0, 0},
 			animation_speed = 0.75
 		},
+		working_visualisations =
+		{
+			{
+				animation =
+				{
+					filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+					line_length = 10,
+					width = 20,
+					height = 40,
+					frame_count = 60,
+					animation_speed = 0.75,
+					scale = 1,
+					shift = {-2.05, -2.3},
+					hr_version =
+					{
+						filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+						line_length = 10,
+						width = 40,
+						height = 81,
+						frame_count = 60,
+						animation_speed = 0.75,
+						scale = 1,
+						shift = {-2.05, -2.3},
+					},
+				},
+				light = {intensity = 0.8, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+			}
+		},
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
 		{
@@ -303,6 +396,9 @@ data:extend({
 				tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 				scale = 0.32,
 				shift = {-12, -12},
+			},
+			{
+				icon = "__Lenny_Industries__/graphics/lightning-bolt.png"
 			}
 		},
 		icon_size = 32,
@@ -360,6 +456,34 @@ data:extend({
 			frame_count = 25,
 			shift = {0, 0},
 			animation_speed = 0.75
+		},
+		working_visualisations =
+		{
+			{
+				animation =
+				{
+					filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+					line_length = 10,
+					width = 20,
+					height = 40,
+					frame_count = 60,
+					animation_speed = 0.75,
+					scale = 1,
+					shift = {-2.05, -2.3},
+					hr_version =
+					{
+						filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+						line_length = 10,
+						width = 40,
+						height = 81,
+						frame_count = 60,
+						animation_speed = 0.75,
+						scale = 1,
+						shift = {-2.05, -2.3},
+					},
+				},
+				light = {intensity = 0.8, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+			}
 		},
 		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		working_sound =
