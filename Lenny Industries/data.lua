@@ -46,3 +46,10 @@ end
 if not settings.startup["Pipe_Status"].value then
 	require("prototypes.overwrites.overwrite_pipes_disable")
 end
+
+--Locomotive Turret
+if settings.startup["LocomotiveTurret_Status"].value then
+	require("prototypes.equipment.locomotive-turret")
+	require("prototypes.item.locomotive-turret")
+	require("prototypes.recipe.locomotive-turret")
+end

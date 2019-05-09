@@ -1,4 +1,5 @@
 data:extend({
+	--[[DEPRECATED
 	{
 		type = "recipe",
 		name = "wood",
@@ -11,6 +12,7 @@ data:extend({
 		result = "wood",
 		result_count = 2
 	},
+	]]--
 	{
 		type = "recipe",
 		name = "resin",
@@ -18,7 +20,7 @@ data:extend({
 		enabled = true,
 		ingredients =
 		{
-			{"raw-wood", 5},
+			{"wood", 5},
 		},
 		energy_requred = 1,
 		result = "resin",

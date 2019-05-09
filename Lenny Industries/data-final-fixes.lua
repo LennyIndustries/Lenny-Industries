@@ -33,6 +33,11 @@ if settings.startup["CRobot_Status"].value then
 	require("prototypes.overwrites.overwrite_construction-robot")
 end
 
+--Anagel's Gas Fuel Values
+if settings.startup["AngelBurning_Status"].value and mods["angelspetrochem"] then
+	require("scripts.angel_burning")
+end
+
 --Rebalance Bob's Steam
 --[[DEPRECATED
 if mods["bobpower"] and settings.startup["BobPower_Status"].value then

@@ -148,4 +148,20 @@ data:extend({
 		order = "aq",
 	},
 ]]--
+{
+	type = "bool-setting",
+	name = "AngelBurning_Status",
+	setting_type = "startup",
+	default_value = true,
+	per_user = false,
+	order = "ar",
+},
+{
+	type = "bool-setting",
+	name = "LocomotiveTurret_Status",
+	setting_type = "startup",
+	default_value = true,
+	per_user = false,
+	order = "as",
+},
 })

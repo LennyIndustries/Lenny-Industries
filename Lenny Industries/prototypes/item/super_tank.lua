@@ -4,7 +4,6 @@ data:extend({
 		name = "supertank",
 		icon = "__Lenny_Industries__/graphics/supertank.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		subgroup = "transport",
 		order = "b[personal-transport]-c[supertank]",
 		place_result = "supertank",
@@ -16,7 +15,6 @@ data:extend({
 		name = "super-explosive-cannon-shell",
 		icon = "__Lenny_Industries__/graphics/super-explosive-cannon-shell.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		ammo_type =
 		{
 			category = "cannon-shell",
@@ -125,7 +123,6 @@ data:extend({
 		name = "super-piercing-bullet-magazine",
 		icon = "__Lenny_Industries__/graphics/super-piercing-bullet-magazine.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		ammo_type =
 		{
 			category = "bullet",
