@@ -4,7 +4,7 @@ data:extend({
 		name = "supertank",
 		icon = "__Lenny_Industries__/graphics/supertank.png",
 		icon_size = 32,
-		flags = {"pushable", "placeable-neutral", "player-creation", "placeable-off-grid"},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "supertank"},
 		max_health = 25000 * settings.startup["SuperTank_Life"].value,
 		corpse = "medium-remnants",
@@ -287,7 +287,7 @@ data:extend({
 		name = "super-tank-cannon",
 		icon = "__base__/graphics/icons/tank-cannon.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory", "hidden"},
+		flags = {"hidden"},
 		subgroup = "gun",
 		order = "z[tank]-a[cannon]",
 		attack_parameters =
@@ -315,7 +315,6 @@ data:extend({
 		name = "super-tank-machine-gun",
 		icon = "__base__/graphics/icons/submachine-gun.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
 		subgroup = "gun",
 		order = "a[basic-clips]-b[tank-machine-gun]",
 		attack_parameters =

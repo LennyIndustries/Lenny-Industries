@@ -18,7 +18,6 @@ data:extend({
 			}
 		},
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "a[arc-furnace_1]",
 		place_result = "arc-furnace_1",
@@ -146,7 +145,6 @@ data:extend({
 			}
 		},
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "b[arc-furnace_2]",
 		place_result = "arc-furnace_2",
@@ -274,7 +272,6 @@ data:extend({
 			}
 		},
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "c[arc-furnace_3]",
 		place_result = "arc-furnace_3",
@@ -402,7 +399,6 @@ data:extend({
 			}
 		},
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
 		subgroup = "angels-blast-furnace",
 		order = "d[arc-furnace_4]",
 		place_result = "arc-furnace_4",
