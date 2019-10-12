@@ -27,12 +27,12 @@ if mods["bobelectronics"] and mods["bobassembly"] and settings.startup["Electron
 	end
 	require("prototypes.overwrites.overwrite_bobelectronics")
 end
-
+--[[Error after infinite reseach
 --Better Inserters Research
 if settings.startup["BetterInserters_Status"].value then
 	require("prototypes.technology.betterinsertersresearch")
 end
-
+]]--
 --Super Tank
 if settings.startup["SuperTank_Status"].value then
 	supertank_ammo_factor = 15
@@ -46,10 +46,11 @@ end
 if not settings.startup["Pipe_Status"].value then
 	require("prototypes.overwrites.overwrite_pipes_disable")
 end
-
+--[[Error on no bob or file not found
 --Locomotive Turret
 if settings.startup["LocomotiveTurret_Status"].value then
 	require("prototypes.equipment.locomotive-turret")
 	require("prototypes.item.locomotive-turret")
 	require("prototypes.recipe.locomotive-turret")
 end
+]]--
