@@ -1,9 +1,12 @@
 {
   "name": "Lenny_Industries",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "title": "Lenny Industries",
   "author": "Lenny",
+	"contact": "https://discord.gg/bFNy7En",
+	"homepage": "https://github.com/LennyIndustries/Lenny-Industries",
   "license": "GNU GPLv3",
   "description": "Lenny Industries",
-  "factorio_version": "0.17"
+  "factorio_version": "0.18",
+	"dependencies": ["? angelssmelting", "? bobplates", "? bobelectronics", "? aai-industry", "? ShinyAngelGFX", "? bobvehicleequipment", "? angelsindustries", "? FARL", "? angelspetrochem"]
 }

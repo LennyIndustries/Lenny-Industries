@@ -105,7 +105,7 @@ data:extend({
 		type = "bool-setting",
 		name = "SuperTank_Status",
 		setting_type = "startup",
-		default_value = true,
+		default_value = false,
 		per_user = false,
 		order = "am",
 	},

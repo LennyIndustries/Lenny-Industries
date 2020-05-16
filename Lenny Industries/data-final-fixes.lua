@@ -17,7 +17,7 @@ if settings.startup["VehicleGrid_Status"].value then
 		require ("prototypes.equipment-grid.bob")
 	elseif mods["angelsindustries"] then
 		require ("prototypes.equipment-grid.angel")
-	elseif mods["farl"] then
+	elseif mods["FARL"] then
 		require ("prototypes.equipment-grid.farl")
 	else
 		require ("prototypes.equipment-grid.vanilla")

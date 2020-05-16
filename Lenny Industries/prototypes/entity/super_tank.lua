@@ -337,7 +337,13 @@ data:extend({
 			projectile_center = {-0.15625, -0.07812},
 			projectile_creation_distance = 1,
 			range = 35,
-			sound = make_heavy_gunshot_sounds()
+			sound =
+			{
+				{
+					filename = "__base__/sound/fight/heavy-gunshot-1.ogg",
+					volume = 1.0
+				}
+			},
 		},
 		stack_size = 1
 	},
