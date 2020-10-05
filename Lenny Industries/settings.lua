@@ -83,85 +83,36 @@ data:extend({
 		per_user = false,
 		order = "aj",
 	},
---[[DEPRECATED
-	{
-		type = "bool-setting",
-		name = "BobPower_Status",
-		setting_type = "startup",
-		default_value = true,
-		per_user = false,
-		order = "ak",
-	},
-]]--
-	{
+	--[[{
 		type = "bool-setting",
 		name = "BetterInserters_Status",
 		setting_type = "startup",
 		default_value = true,
 		per_user = false,
-		order = "al",
-	},
+		order = "ak",
+	},]]--
 	{
 		type = "bool-setting",
 		name = "SuperTank_Status",
 		setting_type = "startup",
 		default_value = false,
 		per_user = false,
+		order = "al",
+	},
+	{
+		type = "bool-setting",
+		name = "AngelBurning_Status",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
 		order = "am",
 	},
 	{
-		type = "int-setting",
-		name = "SuperTank_Life",
+		type = "bool-setting",
+		name = "LocomotiveTurret_Status",
 		setting_type = "startup",
-		default_value = 1,
-		minimum_value = 1,
+		default_value = true,
 		per_user = false,
 		order = "an",
 	},
---[[
-	{
-		type = "int-setting",
-		name = "SuperTank_Mecha",
-		setting_type = "startup",
-		default_value = 1,
-		minimum_value = 1,
-		per_user = false,
-		order = "ao",
-	},
-]]--
-	{
-		type = "int-setting",
-		name = "SuperTank_Ammo",
-		setting_type = "startup",
-		default_value = 1,
-		minimum_value = 1,
-		per_user = false,
-		order = "ap",
-	},
---[[
-	{
-		type = "bool-setting",
-		name = "SuperTank_Explosion_Immune",
-		setting_type = "startup",
-		default_value = false,
-		per_user = false,
-		order = "aq",
-	},
-]]--
-{
-	type = "bool-setting",
-	name = "AngelBurning_Status",
-	setting_type = "startup",
-	default_value = true,
-	per_user = false,
-	order = "ar",
-},
-{
-	type = "bool-setting",
-	name = "LocomotiveTurret_Status",
-	setting_type = "startup",
-	default_value = true,
-	per_user = false,
-	order = "as",
-},
 })

@@ -1,56 +1,35 @@
 --Arc Furnace
-if mods["angelssmelting"] and settings.startup["ArcFurnace_Status"].value then
-	if mods["bobplates"] and mods["bobelectronics"] then
-		require("prototypes.recipe.arc-furnace")
-	elseif mods["bobplates"] then
-		require("prototypes.recipe.arc-furnace_nobobelec")
-	elseif mods["bobelectronics"] then
-		require("prototypes.recipe.arc-furnace_nobobplates")
-	else
-		require("prototypes.recipe.arc-furnace_nobob")
-	end
-	require("prototypes.entity.arc-furnace")
-	require("prototypes.technology.arc-furnace")
-end
+require("scripts.plate_type")
+require("prototypes.recipe.arc_furnace")
+require("prototypes.entity.arc_furnace")
+require("prototypes.technology.arc_furnace")
 
 --OP Beacon
-if settings.startup["OPBeacon_Status"].value then
-	require("prototypes.entity.beacon")
-	require("prototypes.recipe.beacon")
-	require("prototypes.technology.beacon")
-end
+require("prototypes.entity.beacon")
+require("prototypes.recipe.beacon")
+require("prototypes.technology.beacon")
 
 --Wood In Electronics
-if mods["bobelectronics"] and mods["bobassembly"] and settings.startup["Electronics_Status"].value then
-	if mods["aai-industry"] then
-		require("prototypes.overwrites.overwrite_bobelectronics-aai")
-	end
-	require("prototypes.overwrites.overwrite_bobelectronics")
-end
---[[Error after infinite reseach
---Better Inserters Research
-if settings.startup["BetterInserters_Status"].value then
-	require("prototypes.technology.betterinsertersresearch")
-end
-]]--
+require("overwrites.overwrite_bobelectronics")
+
 --Super Tank
-if settings.startup["SuperTank_Status"].value then
-	supertank_ammo_factor = 15
-	require("prototypes.entity.super_tank")
-	require("prototypes.item.super_tank")
-	require("prototypes.recipe.super_tank")
-	require("prototypes.technology.super_tank")
-end
+require("prototypes.item.super_tank-weapons")
+require("prototypes.item.super_tank-ammo")
+require("prototypes.projectile.super_tank")
+require("prototypes.entity.super_tank")
+require("prototypes.item.super_tank")
+require("prototypes.recipe.super_tank")
+require("prototypes.technology.super_tank")
 
 --Quality Of Life
-if not settings.startup["Pipe_Status"].value then
-	require("prototypes.overwrites.overwrite_pipes_disable")
-end
---[[Error on no bob or file not found
+require("overwrites.overwrite_pipes_disable")
+
 --Locomotive Turret
-if settings.startup["LocomotiveTurret_Status"].value then
-	require("prototypes.equipment.locomotive-turret")
-	require("prototypes.item.locomotive-turret")
-	require("prototypes.recipe.locomotive-turret")
-end
+require("prototypes.equipment.locomotive_turret")
+require("prototypes.item.locomotive_turret")
+require("prototypes.recipe.locomotive_turret")
+
+--[[Error after infinite reseach
+--Better Inserters Research
+require("prototypes.technology.betterinsertersresearch")
 ]]--
