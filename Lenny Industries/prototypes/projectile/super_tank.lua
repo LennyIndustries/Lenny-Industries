@@ -415,7 +415,7 @@ if settings.startup["SuperTank_Status"].value then
 			collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
 			acceleration = 0,
 			direction_only = true,
-			piercing_damage = 5000,
+			piercing_damage = 2500,
 			action =
 			{
 				type = "direct",
@@ -465,10 +465,10 @@ if settings.startup["SuperTank_Status"].value then
 			type = "beam",
 			name = "super-beam",
 			flags = {"not-on-map"},
-			width = 0.75,
-			damage_interval = 20,
+			width = 1.0,
+			damage_interval = 10,
 			random_target_offset = true,
-			action_triggered_automatically = false,
+			action_triggered_automatically = true,
 			action =
 			{
 				type = "direct",

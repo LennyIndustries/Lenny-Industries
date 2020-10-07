@@ -1,7 +1,7 @@
 if settings.startup["SuperTank_Status"].value then
 	data:extend({
 		{
-			type = "item",
+			type = "item-with-entity-data",
 			name = "supertank",
 			icons =
 			{

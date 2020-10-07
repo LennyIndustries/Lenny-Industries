@@ -18,4 +18,8 @@ if settings.startup["VehicleGrid_Status"].value then
 	for i, obj in pairs(data.raw["artillery-wagon"]) do
 		obj.equipment_grid = "vehicle-grid-overwrite"
 	end
+
+	for i, obj in pairs(data.raw["spider-vehicle"]) do
+		obj.equipment_grid = "vehicle-grid-overwrite"
+	end
 end
