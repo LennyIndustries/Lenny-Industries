@@ -28,20 +28,20 @@ if settings.startup["LocomotiveTurret_Status"].value then
 			energy_source =
 			{
 				type = "electric",
-				usage_priority = "secondary-input",
+				usage_priority = "primary-input",
 				buffer_capacity = "1MJ",
 			},
 			attack_parameters =
 			{
-				type = "projectile",
-				ammo_category = "bullet",
-				cooldown = 1,
-				movement_slow_down_factor = 0.0,
+				type = "beam",
+				ammo_category = "electric",
+				cooldown = 5,
+				source_offset = {0, -3.423489 / 4},
 				projectile_creation_distance = 1.125,
 				range = 50,
 				ammo_type =
 				{
-					category = "bullet",
+					category = "laser-turret",
 					energy_consumption = "2500J",
 					action =
 					{
@@ -51,26 +51,11 @@ if settings.startup["LocomotiveTurret_Status"].value then
 							type = "beam",
 							beam = "super-beam",
 							max_length = 50,
-							duration = 20,
+							duration = 50,
 							source_offset = {0, -1.31439 }
 						}
 					}
-				},
-				sound =
-				{
-					{
-						filename = "__base__/sound/fight/laser-1.ogg",
-						volume = 1.0
-					},
-					{
-						filename = "__base__/sound/fight/laser-2.ogg",
-						volume = 1.0
-					},
-					{
-						filename = "__base__/sound/fight/laser-3.ogg",
-						volume = 1.0
-					}
-				},
+				}
 			},
 			automatic = true,
 		}
