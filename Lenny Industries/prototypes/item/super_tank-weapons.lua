@@ -47,6 +47,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-laser-gun",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -91,6 +92,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-machine-gun",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -138,6 +140,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-shotgun",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -189,6 +192,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-flamethrower",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -200,7 +204,6 @@ if settings.startup["SuperTank_Status"].value then
 			},
 			icon_size = 64,
 			icon_mipmaps = 4,
-			flags = {"hidden"},
 			subgroup = "gun",
 			order = "b[flamethrower]-b[tank-flamethrower]",
 			attack_parameters =
@@ -243,6 +246,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-rocket-launcher",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -255,7 +259,6 @@ if settings.startup["SuperTank_Status"].value then
 			icon_size = 64,
 			icon_mipmaps = 4,
 			subgroup = "gun",
-			flags = {"hidden"},
 			order = "z[spider]-a[rocket-launcher]",
 			attack_parameters =
 			{
@@ -280,6 +283,7 @@ if settings.startup["SuperTank_Status"].value then
 		{
 			type = "gun",
 			name = "super-tank-cannon",
+			flags = {"hidden"},
 			icons =
 			{
 				{
@@ -290,7 +294,6 @@ if settings.startup["SuperTank_Status"].value then
 				}
 			},
 			icon_size = 64,
-			flags = {"hidden"},
 			subgroup = "gun",
 			order = "z[tank]-a[cannon]",
 			attack_parameters =
