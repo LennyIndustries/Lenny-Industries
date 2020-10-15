@@ -459,8 +459,12 @@ if settings.startup["SuperTank_Status"].value then
 				priority = "high",
 				blend_mode = "additive"
 			}
-		},
+		}
+	})
+end
 
+if settings.startup["LocomotiveTurret_Status"].value then
+	data:extend({
 		{
 			type = "beam",
 			name = "super-beam",
