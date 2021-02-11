@@ -4,7 +4,8 @@ if settings.startup["OPBeacon_Status"].value then
 			type = "item",
 			name = "op_beacon_1",
 			icon = "__base__/graphics/icons/beacon.png",
-			icon_size = 32,
+			icon_size = 64,
+			icon_mipmaps = 4,
 			subgroup = "module",
 			order = "a[beacon]-3",
 			place_result = "op_beacon_1",
@@ -15,7 +16,8 @@ if settings.startup["OPBeacon_Status"].value then
 			type = "item",
 			name = "op_beacon_2",
 			icon = "__base__/graphics/icons/beacon.png",
-			icon_size = 32,
+			icon_size = 64,
+			icon_mipmaps = 4,
 			subgroup = "module",
 			order = "a[beacon]-4",
 			place_result = "op_beacon_2",
@@ -26,41 +28,47 @@ if settings.startup["OPBeacon_Status"].value then
 			type = "beacon",
 			name = "op_beacon_1",
 			icon = "__base__/graphics/icons/beacon.png",
-			icon_size = 32,
+			icon_size = 64,
+			icon_mipmaps = 4,
 			flags = {"placeable-player", "player-creation"},
 			minable = {mining_time = 1, result = "op_beacon_1"},
 			max_health = 400,
-			corpse = "big-remnants",
-			dying_explosion = "medium-explosion",
+			corpse = "beacon-remnants",
+			dying_explosion = "beacon-explosion",
 			collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 			selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+			graphics_set = require("__base__/prototypes/entity/beacon-animations"),
 			allowed_effects = {"productivity", "consumption", "speed", "pollution"},
-			base_picture =
+			working_sound =
 			{
-				filename = "__base__/graphics/entity/beacon/beacon-base.png",
-				width = 116,
-				height = 93,
-				shift = { 0.34, 0.06}
+				sound =
+				{
+					{
+						filename = "__base__/sound/beacon-1.ogg",
+						volume = 0.2
+					},
+					{
+						filename = "__base__/sound/beacon-2.ogg",
+						volume = 0.2
+					}
+				},
+				audible_distance_modifier = 0.33,
+				max_sounds_per_type = 3
 			},
-			animation =
+			water_reflection =
 			{
-				filename = "__base__/graphics/entity/beacon/beacon-antenna.png",
-				width = 54,
-				height = 50,
-				line_length = 8,
-				frame_count = 32,
-				shift = { -0.03, -1.72},
-				animation_speed = 0.5
-			},
-			animation_shadow =
-			{
-				filename = "__base__/graphics/entity/beacon/beacon-antenna-shadow.png",
-				width = 63,
-				height = 49,
-				line_length = 8,
-				frame_count = 32,
-				shift = { 3.12, 0.5},
-				animation_speed = 0.5
+				pictures =
+				{
+					filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
+					priority = "extra-high",
+					width = 24,
+					height = 28,
+					shift = util.by_pixel(0, 55),
+					variation_count = 1,
+					scale = 5
+				},
+				rotate = false,
+				orientation_to_variation = false
 			},
 			radius_visualisation_picture =
 			{
@@ -88,41 +96,47 @@ if settings.startup["OPBeacon_Status"].value then
 			type = "beacon",
 			name = "op_beacon_2",
 			icon = "__base__/graphics/icons/beacon.png",
-			icon_size = 32,
+			icon_size = 64,
+			icon_mipmaps = 4,
 			flags = {"placeable-player", "player-creation"},
 			minable = {mining_time = 1, result = "op_beacon_2"},
-			max_health = 400,
-			corpse = "big-remnants",
-			dying_explosion = "medium-explosion",
+			max_health = 800,
+			corpse = "beacon-remnants",
+			dying_explosion = "beacon-explosion",
 			collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 			selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+			graphics_set = require("__base__/prototypes/entity/beacon-animations"),
 			allowed_effects = {"productivity", "consumption", "speed", "pollution"},
-			base_picture =
+			working_sound =
 			{
-				filename = "__base__/graphics/entity/beacon/beacon-base.png",
-				width = 116,
-				height = 93,
-				shift = { 0.34, 0.06}
+				sound =
+				{
+					{
+						filename = "__base__/sound/beacon-1.ogg",
+						volume = 0.2
+					},
+					{
+						filename = "__base__/sound/beacon-2.ogg",
+						volume = 0.2
+					}
+				},
+				audible_distance_modifier = 0.33,
+				max_sounds_per_type = 3
 			},
-			animation =
+			water_reflection =
 			{
-				filename = "__base__/graphics/entity/beacon/beacon-antenna.png",
-				width = 54,
-				height = 50,
-				line_length = 8,
-				frame_count = 32,
-				shift = { -0.03, -1.72},
-				animation_speed = 0.5
-			},
-			animation_shadow =
-			{
-				filename = "__base__/graphics/entity/beacon/beacon-antenna-shadow.png",
-				width = 63,
-				height = 49,
-				line_length = 8,
-				frame_count = 32,
-				shift = { 3.12, 0.5},
-				animation_speed = 0.5
+				pictures =
+				{
+					filename = "__base__/graphics/entity/beacon/beacon-reflection.png",
+					priority = "extra-high",
+					width = 24,
+					height = 28,
+					shift = util.by_pixel(0, 55),
+					variation_count = 1,
+					scale = 5
+				},
+				rotate = false,
+				orientation_to_variation = false
 			},
 			radius_visualisation_picture =
 			{

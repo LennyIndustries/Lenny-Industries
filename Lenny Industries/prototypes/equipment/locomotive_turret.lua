@@ -41,7 +41,7 @@ if settings.startup["LocomotiveTurret_Status"].value then
 				range = 50,
 				ammo_type =
 				{
-					category = "laser-turret",
+					category = "laser",
 					energy_consumption = "2500J",
 					action =
 					{
